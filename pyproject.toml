@@ -1,0 +1,21 @@
+[project]
+name = "build-cartographer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jordon-py", email = "c.jordon@icloud.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=3.1.1",
+    "pydantic>=2",
+    "python-dotenv>=1.2.2",
+]
+
+[project.scripts]
+build-cartographer = "build_cartographer:main"
+
+[build-system]
+requires = ["uv_build>=0.9.30,<0.10.0"]
+build-backend = "uv_build"
